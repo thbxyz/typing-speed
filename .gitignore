@@ -1,0 +1,13 @@
+#Ignore my local virtual environment folder
+appvenv/
+
+#Ignore Python cache files
+__pycache__/
+
+#Ignore compiled .pyc or optimized python files
+*.py[cod]
+*.pyo
+
+#Ignore system files (system specific junk from macOS or Windows)
+.DS_Store
+Thumbs.db
