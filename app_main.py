@@ -272,8 +272,7 @@ if st.session_state["start_status"] == True:
                 st.success("Result saved!")
                 reset_defaults_and_rerun()
                 st.rerun()
-    
-    st.button("Retry", type="primary", on_click=reset_defaults_and_rerun)           
+       
     
 st.markdown("### Leaderboard (Top 5)")
 leaderboard_data = get_leaderboard()
@@ -299,4 +298,5 @@ with st.expander("💡How is my typing speed measured?"):
 """)
     st.write("Speed (WPM) × Accuracy (%) = Net WPM")
 
-
+if st.session_state["start_status"] == True:
+    st.button("Retry", type="primary", on_click=reset_defaults_and_rerun)    
