@@ -11,3 +11,6 @@ __pycache__/
 #Ignore system files (system specific junk from macOS or Windows)
 .DS_Store
 Thumbs.db
+
+#Ignore the .env file used to store my DB credentials
+.env
